@@ -1,0 +1,125 @@
+body, html { 
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #333, #111);
+}
+
+.screem {
+    position: relative;
+    width: auto;
+    padding: 20px;
+    border: 5px solid #17e944;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #333, #555);
+    box-shadow: 0 0 20px rgb(32, 228, 6);
+    text-align: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.slot {
+    width: 79px;
+    height: 237px;
+    margin: 5px;
+    background-image: url(img/slotreel.webp);
+    border: 2px solid #17e944;
+    border-radius: 5px;
+    box-shadow: 0 0 9px rgb(32, 228, 6);
+}
+
+.win{
+
+    box-shadow: 0 0 9px rgb(227, 243, 2);
+    border-color: rgb(227, 243, 2);
+
+}
+
+.boxbutton {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#avanceButton1, #avanceButton2, #avanceButton3 {
+    width: 79px;
+    height: 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #333, #222);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.8), inset 0 0 5px rgba(255, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+#avanceButton1:disabled, #avanceButton2:disabled, #avanceButton3:disabled{
+    cursor:default;
+    transition: none;
+    box-shadow: 0 0 5px rgba(83, 83, 83, 0.4), inset 0 0 5px rgba(83, 83, 83, 0.3);
+    transform: none;
+    color: grey;
+}
+
+#spinButton, #sspinButton {
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4), inset 0 0 5px rgba(255, 100, 100, 0.5);
+}
+
+#spinButton {
+    background: linear-gradient(145deg, #ff0000, #ad0000);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), inset 0 0 5px rgba(255, 100, 100, 0.4);
+}
+
+#sspinButton {
+    background: linear-gradient(145deg, #008000, #006400);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.4), inset 0 0 5px rgba(100, 255, 100, 0.3);
+}
+
+.spinButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.5), 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.spinButton:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.3), inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.boxbutton{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+@keyframes win1 {
+    0% { 
+        border: 2px solid #17e944;
+        box-shadow: 0 0 9px rgb(32, 228, 6);
+    }
+
+    100% { 
+        box-shadow: 0 0 9px rgb(227, 243, 2);
+        border-color: rgb(227, 243, 2);
+    }
+}
